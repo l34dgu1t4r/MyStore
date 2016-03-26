@@ -12,6 +12,6 @@ public class App {
     }
 
     public static void showOptionPane() {
-        JOptionPane.showMessageDialog(null, "Hello world");
+        JOptionPane.showMessageDialog(null, "Alerta de Edi");
     }
 }
