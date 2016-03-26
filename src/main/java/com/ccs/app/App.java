@@ -1,4 +1,7 @@
-package com.ccs;
+package com.ccs.app;
+
+import com.ccs.model.hibernate.HibernateUtil;
+import org.hibernate.Session;
 
 import javax.swing.*;
 
@@ -8,7 +11,11 @@ import javax.swing.*;
  */
 public class App {
     public static void main( String[] args ) {
-        showOptionPane();
+
+        Session session = (Session) HibernateUtil.getSessionFactory();
+
+        session.load()
+
     }
 
     public static void showOptionPane() {
